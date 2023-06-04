@@ -5,23 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc03d393-9649-4381-9fbc-5d2968bfae48" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/praktikum/Bun.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/praktikum/Burger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/praktikum/Database.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/praktikum/Ingredient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/praktikum/IngredientType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/praktikum/Praktikum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/BunTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/BurgerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/IngredientTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/IngredientTypeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
