@@ -6,6 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="cc03d393-9649-4381-9fbc-5d2968bfae48" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/praktikum/Bun.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/praktikum/Bun.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/praktikum/Ingredient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/praktikum/Ingredient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BurgerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BurgerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,13 +43,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
@@ -56,11 +60,20 @@
       <command value="mvn verify" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BurgerTest.getPriceCorrect">
+  <component name="RunManager" selected="JUnit.BurgerTest">
     <configuration name="All in Diplom_1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Diplom_1" />
       <option name="PACKAGE_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BurgerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BurgerTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -75,6 +88,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BurgerTest.removeIngredientCorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BurgerTest" />
+      <option name="METHOD_NAME" value="removeIngredientCorrect" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="IngredientTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Diplom_1" />
       <option name="PACKAGE_NAME" value="" />
@@ -84,33 +107,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IngredientTest.ingredientConstructorCorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Diplom_1" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="IngredientTest" />
-      <option name="METHOD_NAME" value="ingredientConstructorCorrect" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="IngredientTypeTest.ingredientTypeCorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Diplom_1" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="IngredientTypeTest" />
-      <option name="METHOD_NAME" value="ingredientTypeCorrect" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BurgerTest" />
         <item itemvalue="JUnit.BurgerTest.getPriceCorrect" />
+        <item itemvalue="JUnit.BurgerTest.removeIngredientCorrect" />
         <item itemvalue="JUnit.All in Diplom_1" />
         <item itemvalue="JUnit.IngredientTest" />
-        <item itemvalue="JUnit.IngredientTypeTest.ingredientTypeCorrect" />
-        <item itemvalue="JUnit.IngredientTest.ingredientConstructorCorrect" />
       </list>
     </recent_temporary>
   </component>

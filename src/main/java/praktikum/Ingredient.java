@@ -17,6 +17,18 @@ public class Ingredient {
         this.price = price;
     }
 
+    public static void setType(IngredientType type) {
+        Ingredient.type = type;
+    }
+
+    public static void setName(String name) {
+        Ingredient.name = name;
+    }
+
+    public static void setPrice(float price) {
+        Ingredient.price = price;
+    }
+
     public float getPrice() {
         return price;
     }

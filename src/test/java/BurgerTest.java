@@ -3,6 +3,7 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
+import org.mockito.Mockito;
 import org.mockito.junit.MockitoJUnitRunner;
 import praktikum.Bun;
 import praktikum.Burger;
@@ -12,14 +13,13 @@ import static praktikum.IngredientType.*;
 @RunWith(MockitoJUnitRunner.class)
 public class BurgerTest {
 
-    Bun bun = new Bun("Флюоресцентная булка R2-D3", 988);
-    Burger burger = new Burger();
-    Ingredient expectedIngredient = new Ingredient(SAUCE,"Соус Spicy-X", 90);
-    Ingredient secondIngredient = new Ingredient(SAUCE,"Соус фирменный Space Sauce", 80);
-
-
     @Mock
-    Burger burgerMock;
+    Bun bun;
+
+    Burger burger = new Burger();
+    @Mock
+    Ingredient expectedIngredient;
+
     @Test
     public void setBunsCorrect() {
         burger.setBuns(bun);
@@ -43,6 +43,7 @@ public class BurgerTest {
     }
     @Test
     public void moveIngredientCorrect() {
+        Ingredient secondIngredient = new Ingredient(SAUCE,"Соус фирменный Space Sauce", 80);
         burger.addIngredient(expectedIngredient);
         burger.addIngredient(secondIngredient);
         burger.moveIngredient(0, 1);
@@ -52,10 +53,18 @@ public class BurgerTest {
 
     @Test
     public void getPriceCorrect() {
-        burger.setBuns(new Bun("Краторная булка N-200i", 1255));
+        Mockito.when(bun.getPrice()).thenReturn(1255F);
+        burger.setBuns(bun);
+        Mockito.when(expectedIngredient.getPrice()).thenReturn(90F);
         burger.addIngredient(expectedIngredient);
         float actualPrice = burger.getPrice();
         float expectedPrice = (1255*2 + 90);
         Assert.assertEquals(expectedPrice, actualPrice, 0);
     }
+
+    @Test
+    public void getReceiptTest() {
+
+    }
 }
+
