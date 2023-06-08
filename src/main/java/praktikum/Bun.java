@@ -13,7 +13,6 @@ public class Bun {
         this.name = name;
         this.price = price;
     }
-
     public String getName() {
         return name;
     }
@@ -22,11 +21,4 @@ public class Bun {
         return price;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setPrice(float price) {
-        this.price = price;
-    }
 }
