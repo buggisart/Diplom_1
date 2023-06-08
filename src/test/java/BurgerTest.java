@@ -1,4 +1,5 @@
 
+import org.junit.After;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -12,13 +13,14 @@ import static praktikum.IngredientType.*;
 
 @RunWith(MockitoJUnitRunner.class)
 public class BurgerTest {
-
-    @Mock
-    Bun bun;
-
     Burger burger = new Burger();
     @Mock
+    Bun bun;
+    @Mock
     Ingredient expectedIngredient;
+    @Mock
+    Ingredient secondIngredient;
+
 
     @Test
     public void setBunsCorrect() {
@@ -43,7 +45,6 @@ public class BurgerTest {
     }
     @Test
     public void moveIngredientCorrect() {
-        Ingredient secondIngredient = new Ingredient(SAUCE,"Соус фирменный Space Sauce", 80);
         burger.addIngredient(expectedIngredient);
         burger.addIngredient(secondIngredient);
         burger.moveIngredient(0, 1);
@@ -64,7 +65,22 @@ public class BurgerTest {
 
     @Test
     public void getReceiptTest() {
-
+    Mockito.when(bun.getName()).thenReturn("red bun");
+    Mockito.when(bun.getPrice()).thenReturn(300F);
+    burger.setBuns(bun);
+    Mockito.when(expectedIngredient.getName()).thenReturn("cutlet");
+    Mockito.when(expectedIngredient.getType()).thenReturn(FILLING);
+    Mockito.when(expectedIngredient.getPrice()).thenReturn(100F);
+    burger.addIngredient(expectedIngredient);
+    String actualResult = burger.getReceipt();
+    String expectedResult = String.format("%-19s%n%-18s%n%-19s%n%n%-17s%n",
+                "(==== red bun ====)", "= filling cutlet =",
+                "(==== red bun ====)","Price: 700.000000");
+    Assert.assertEquals(expectedResult, actualResult);
+    }
+    @After
+    public void cleanIngredientList() {
+        burger.ingredients.clear();
     }
 }
 

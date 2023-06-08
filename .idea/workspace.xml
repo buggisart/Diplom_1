@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="cc03d393-9649-4381-9fbc-5d2968bfae48" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/praktikum/Bun.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/praktikum/Bun.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/praktikum/Ingredient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/praktikum/Ingredient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/BurgerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BurgerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,7 +57,7 @@
       <command value="mvn verify" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BurgerTest">
+  <component name="RunManager" selected="JUnit.BurgerTest.getReceiptTest">
     <configuration name="All in Diplom_1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Diplom_1" />
       <option name="PACKAGE_NAME" value="" />
@@ -88,6 +85,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BurgerTest.getReceiptTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BurgerTest" />
+      <option name="METHOD_NAME" value="getReceiptTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BurgerTest.removeIngredientCorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Diplom_1" />
       <option name="PACKAGE_NAME" value="" />
@@ -98,22 +105,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IngredientTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Diplom_1" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="IngredientTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BurgerTest.getReceiptTest" />
         <item itemvalue="JUnit.BurgerTest" />
         <item itemvalue="JUnit.BurgerTest.getPriceCorrect" />
         <item itemvalue="JUnit.BurgerTest.removeIngredientCorrect" />
         <item itemvalue="JUnit.All in Diplom_1" />
-        <item itemvalue="JUnit.IngredientTest" />
       </list>
     </recent_temporary>
   </component>
