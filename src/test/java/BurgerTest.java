@@ -1,8 +1,9 @@
-
+import org.junit.After;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
+import org.mockito.Mockito;
 import org.mockito.junit.MockitoJUnitRunner;
 import praktikum.Bun;
 import praktikum.Burger;
@@ -11,15 +12,15 @@ import static praktikum.IngredientType.*;
 
 @RunWith(MockitoJUnitRunner.class)
 public class BurgerTest {
-
-    Bun bun = new Bun("Флюоресцентная булка R2-D3", 988);
     Burger burger = new Burger();
-    Ingredient expectedIngredient = new Ingredient(SAUCE,"Соус Spicy-X", 90);
-    Ingredient secondIngredient = new Ingredient(SAUCE,"Соус фирменный Space Sauce", 80);
-
-
     @Mock
-    Burger burgerMock;
+    Bun bun;
+    @Mock
+    Ingredient expectedIngredient;
+    @Mock
+    Ingredient secondIngredient;
+
+
     @Test
     public void setBunsCorrect() {
         burger.setBuns(bun);
@@ -52,10 +53,32 @@ public class BurgerTest {
 
     @Test
     public void getPriceCorrect() {
-        burger.setBuns(new Bun("Краторная булка N-200i", 1255));
+        Mockito.when(bun.getPrice()).thenReturn(1255F);
+        burger.setBuns(bun);
+        Mockito.when(expectedIngredient.getPrice()).thenReturn(90F);
         burger.addIngredient(expectedIngredient);
         float actualPrice = burger.getPrice();
         float expectedPrice = (1255*2 + 90);
         Assert.assertEquals(expectedPrice, actualPrice, 0);
+    }
+
+    @Test
+    public void getReceiptTest() {
+        Mockito.when(bun.getName()).thenReturn("red bun");
+        Mockito.when(bun.getPrice()).thenReturn(300F);
+        burger.setBuns(bun);
+        Mockito.when(expectedIngredient.getName()).thenReturn("cutlet");
+        Mockito.when(expectedIngredient.getType()).thenReturn(FILLING);
+        Mockito.when(expectedIngredient.getPrice()).thenReturn(100F);
+        burger.addIngredient(expectedIngredient);
+        String actualResult = burger.getReceipt();
+        String expectedResult = String.format("%-19s%n%-18s%n%-19s%n%n%-17s%n",
+                "(==== red bun ====)", "= filling cutlet =",
+                "(==== red bun ====)","Price: 700.000000");
+        Assert.assertEquals(expectedResult, actualResult);
+    }
+    @After
+    public void cleanIngredientList() {
+        burger.ingredients.clear();
     }
 }
