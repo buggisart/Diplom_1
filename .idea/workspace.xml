@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc03d393-9649-4381-9fbc-5d2968bfae48" name="Changes" comment="" />
+    <list default="true" id="cc03d393-9649-4381-9fbc-5d2968bfae48" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/test/java/BurgerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BurgerTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,7 +56,7 @@
       <command value="mvn verify" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BurgerTest.getPriceCorrect">
+  <component name="RunManager" selected="JUnit.java in Diplom_1">
     <configuration name="All in Diplom_1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Diplom_1" />
       <option name="PACKAGE_NAME" value="" />
@@ -82,16 +84,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IngredientTest.ingredientConstructorCorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Diplom_1" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="IngredientTest" />
-      <option name="METHOD_NAME" value="ingredientConstructorCorrect" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="IngredientTypeTest.ingredientTypeCorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Diplom_1" />
       <option name="PACKAGE_NAME" value="" />
@@ -102,13 +94,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="java in Diplom_1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_1" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/src/test/java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.java in Diplom_1" />
         <item itemvalue="JUnit.BurgerTest.getPriceCorrect" />
         <item itemvalue="JUnit.All in Diplom_1" />
         <item itemvalue="JUnit.IngredientTest" />
         <item itemvalue="JUnit.IngredientTypeTest.ingredientTypeCorrect" />
-        <item itemvalue="JUnit.IngredientTest.ingredientConstructorCorrect" />
       </list>
     </recent_temporary>
   </component>
