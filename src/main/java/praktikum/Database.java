@@ -33,4 +33,24 @@ public class Database {
         return ingredients;
     }
 
+    public float getMinBunPrice() {
+        float minBunPrice = buns.get(0).getPrice();
+        for (Bun bun : buns) {
+           if (bun.getPrice() < minBunPrice) {
+           minBunPrice = bun.getPrice();
+           }
+        }
+        return  minBunPrice;
+    }
+
+    public float getMaxBunPrice() {
+        float maxBunPrice = buns.get(0).getPrice();
+        for (Bun bun : buns) {
+            if (bun.getPrice() > maxBunPrice) {
+                maxBunPrice = bun.getPrice();
+            }
+        }
+        return  maxBunPrice;
+    }
+
 }

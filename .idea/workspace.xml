@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc03d393-9649-4381-9fbc-5d2968bfae48" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/BurgerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BurgerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/praktikum/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/praktikum/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BunTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BunTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +52,9 @@
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
@@ -65,30 +70,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BurgerTest.getPriceCorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BunTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Diplom_1" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BurgerTest" />
-      <option name="METHOD_NAME" value="getPriceCorrect" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="IngredientTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Diplom_1" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="IngredientTest" />
+      <option name="MAIN_CLASS_NAME" value="BunTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IngredientTypeTest.ingredientTypeCorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BunTest.bunPriceCorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Diplom_1" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="IngredientTypeTest" />
-      <option name="METHOD_NAME" value="ingredientTypeCorrect" />
+      <option name="MAIN_CLASS_NAME" value="BunTest" />
+      <option name="METHOD_NAME" value="bunPriceCorrect" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BurgerTest.getPriceCorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BurgerTest" />
+      <option name="METHOD_NAME" value="getPriceCorrect" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -105,10 +110,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.java in Diplom_1" />
+        <item itemvalue="JUnit.BunTest" />
+        <item itemvalue="JUnit.BunTest.bunPriceCorrect" />
         <item itemvalue="JUnit.BurgerTest.getPriceCorrect" />
         <item itemvalue="JUnit.All in Diplom_1" />
-        <item itemvalue="JUnit.IngredientTest" />
-        <item itemvalue="JUnit.IngredientTypeTest.ingredientTypeCorrect" />
       </list>
     </recent_temporary>
   </component>
